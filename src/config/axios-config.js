@@ -24,8 +24,8 @@ API.interceptors.response.use(function (response) {
     localStorage.removeItem('tokenExpiry')
   }
 
-  if (response.data.token) {
-    const token = response.data.token
+  if (response.data.authToken) {
+    const token = response.data.authToken
     localStorage.setItem('authToken', token)
     localStorage.setItem('tokenExpiry', (Date.now() + 86400))
   }
