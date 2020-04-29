@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import API from '../../../config/axios-config'
 import Project from '../../Project'
+import { Container } from '@material-ui/core'
 
 export default function ProjectPage() {
 
@@ -14,7 +15,7 @@ export default function ProjectPage() {
       `/projects/${projectId}`
     )
     .then((res) => {
-      setProject(res.data)
+      setTimeout(function(){ setProject(res.data) }, 3000)
       // setLoading(false)
     })
     .catch((err) => {
@@ -24,12 +25,11 @@ export default function ProjectPage() {
   }, [])
 
   return (
-    <div>
-      <h1>Project Page</h1>
+    <Container style={{margin: '5% auto'}}>      
       { project ? 
       <Project project={project} />
-      : null }
-    </div>
+      : <div style={{position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'center', top: 0, left: 0, bottom: 0, right: 0}}><div class="lds-ripple"><div></div><div></div></div></div> }
+    </Container>
   )
 
 }

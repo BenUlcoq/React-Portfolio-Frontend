@@ -1,34 +1,24 @@
-import React from 'react'
-import {Grid, Paper} from '@material-ui/core'
-import {Link} from 'react-router-dom'
+import React, {useState} from 'react'
+import {Grid} from '@material-ui/core'
+import ProjectCard from './ProjectCard'
+
+
 
 export default function Projects(props) {
 
   const projects = props.projects
+  const [hovered, setHovered] = useState(null)
+
 
   return (
-    <Grid container spacing={4}>
+    
+    <Grid container spacing={2} style={{justifyContent: 'space-around'}}>
+      
     { projects ? 
       projects.map((project) => {
         return (
-        <Grid item xs={12} sm={6} md={4}>
-          <Link to={`/projects/${project._id}`}>
-            <Paper>
-              <img src={project.featured.url} width={100}/>
-              <h1>{project.title}</h1>
-              <p>{project.description}</p>
-        
-              {project.media.map((item) => {
-                return <img src={item.url} width={50}/>
-              })}
-              <ul>
-                {project.tags.map((tag) => {
-                  return <li>{tag}</li>
-                })}
-              </ul>
-          </Paper>
-        </Link>
-      </Grid>)}
+          <ProjectCard hovered={hovered} setHovered={setHovered} project={project} />
+        )}
       )
       : null
     }
