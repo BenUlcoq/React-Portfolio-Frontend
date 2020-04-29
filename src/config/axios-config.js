@@ -2,7 +2,7 @@ import axios from 'axios'
 
 let API
 
-if ( process.env.NODE_ENV === ' production') {
+if ( process.env.NODE_ENV === 'production') {
   API = axios.create({
     baseURL: "https://benulcoq-portfolio-server.herokuapp.com/",
     withCredentials: true
