@@ -51,7 +51,7 @@ function App() {
           {/* 
             <PrivateRoute exact path ='/admin'><Dashboard/></PrivateRoute>
             <PrivateRoute exact path ='/admin/login'><Login/></PrivateRoute>
-            <PrivateRoute exact path ='/admin/projects/new'><NewProject/></PrivateRoute> */}
+            <PrivateRoute exact path ='/admin/projects/new'><NewProject/></PrivateRoute> 
             <PrivateRoute exact path="/admin" component={Dashboard} redirect={redirectFunc} 
                 render={ props => <Dashboard {...props} redirect={redirectFunc}/>}
             /> 
@@ -60,7 +60,7 @@ function App() {
             /> 
             <PrivateRoute exact path="/admin/projects/new" component={NewProject} redirect={redirectFunc} 
                 render={ props => <NewProject {...props} redirect={redirectFunc}/>}
-            /> 
+            /> */}
 
             <Route><Redirect to="/"/></Route>
             
