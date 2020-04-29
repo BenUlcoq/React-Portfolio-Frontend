@@ -1,9 +1,6 @@
 import React from 'react'
-import { Paper, Box, Container, Button, Icon } from '@material-ui/core'
+import { Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
-import GitHubIcon from '@material-ui/icons/GitHub';
-
-
 
 export default function LinkButton(props) {
 

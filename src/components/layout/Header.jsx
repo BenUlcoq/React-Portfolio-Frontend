@@ -1,6 +1,6 @@
 import React from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
-import { Hidden, List, Divider, Drawer, Button, IconButton, ListItem } from '@material-ui/core'
+import { Hidden, List, Divider, Drawer, IconButton, ListItem } from '@material-ui/core'
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -41,14 +41,6 @@ const linkStyle = {
   color: '#171637',
   textDecoration: 'none',
   margin:  '0 20px',
-  padding: '5px',
-  textTransform: 'uppercase'
-}
-
-const buttonlinkStyle = {
-  color: '#171637',
-  textDecoration: 'none',
-  // margin:  '0 20px',
   padding: '5px',
   textTransform: 'uppercase'
 }

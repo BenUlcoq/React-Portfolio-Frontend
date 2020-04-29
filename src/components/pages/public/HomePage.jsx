@@ -21,6 +21,7 @@ export default function HomePage() {
       // setLoading(false)
     })
     .catch((err) => {
+      setTags([])
       // setLoading(false)
       // props.redirect('/404')
     })

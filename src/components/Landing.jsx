@@ -1,8 +1,6 @@
 import React from 'react'
 import {Container, IconButton} from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
-import { useState } from 'react'
-import { useEffect } from 'react'
 
 
 export default function Landing() {

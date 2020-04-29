@@ -1,27 +1,27 @@
-import React, { useEffect, useState } from 'react'
-import { Paper, Box, Container, Button, Icon } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react'
+import { Paper, Box, Container } from '@material-ui/core'
+// import { makeStyles } from '@material-ui/core/styles';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkButton from './LinkButton'
 import Carousel from './Carousel'
 
-const useStyles = makeStyles({
-  root: {
-      background: 'linear-gradient(270deg, #FFB800 0%, #FF5C00 100%)',
-      border: 0,
-      borderRadius: 50,
-      boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-      color: 'white',
-      height: 48,
-      padding: '0 30px',
-      width: '100%',
-      margin: '10px auto'
-    },
-  });
+// const useStyles = makeStyles({
+//   root: {
+//       background: 'linear-gradient(270deg, #FFB800 0%, #FF5C00 100%)',
+//       border: 0,
+//       borderRadius: 50,
+//       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+//       color: 'white',
+//       height: 48,
+//       padding: '0 30px',
+//       width: '100%',
+//       margin: '10px auto'
+//     },
+//   });
 
 export default function Project(props) {
 
-  const classes = useStyles()
+  // const classes = useStyles()
   
   const project = props.project
 

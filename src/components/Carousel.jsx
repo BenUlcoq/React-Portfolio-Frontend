@@ -25,7 +25,7 @@ export default function Carousel(props){
         return (
           <div className={'img-container'} style={{position: 'relative', width: '100%', height: '100%'}}>
             <div className={'overlay'} style={{position: "absolute", width: '100%', height: '100%', background: 'linear-gradient(180deg, rgba(22, 26, 55, 0) 54.17%, rgba(22, 26, 55, 1) 100%)'}}></div>
-            <img style={{objectPosition: 'center', objectFit: 'cover', width: '100%', height: '100%'}}src={item.url}/>
+            <img alt={item.description} style={{objectPosition: 'center', objectFit: 'cover', width: '100%', height: '100%'}}src={item.url}/>
           </div>
         )
       })}

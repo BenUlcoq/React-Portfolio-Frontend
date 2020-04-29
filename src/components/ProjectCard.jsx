@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React from 'react'
 import {Grid, Paper, Box, Button} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import { HashLink as Link } from 'react-router-hash-link'
@@ -147,7 +147,7 @@ export default function ProjectCard(props) {
   
             </Box>
             <Box className={'background'}>
-              <img style={{position: 'absolute', objectFit: 'cover', width: '100%', height: '100%', top: 0}} src={project.featured.url} width={100}/>
+              <img alt={`${project.title} feature`} style={{position: 'absolute', objectFit: 'cover', width: '100%', height: '100%', top: 0}} src={project.featured.url} width={100}/>
             </Box>
           </Box>
         </Paper>

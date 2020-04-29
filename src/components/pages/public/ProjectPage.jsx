@@ -22,7 +22,7 @@ export default function ProjectPage() {
       // setLoading(false)
       // props.redirect('/404')
     })
-  }, [])
+  }, [projectId])
 
   return (
     <Container style={{margin: '5% auto'}}>      
