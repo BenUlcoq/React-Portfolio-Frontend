@@ -1,9 +1,15 @@
 import axios from 'axios'
 
+if ( process.env.NODE_ENV === ' production') {
 const API = axios.create({
+    baseURL: "https://benulcoq-portfolio-server.herokuapp.com/",
+    withCredentials: true
+}) }
+else {
+  const API = axios.create({
     baseURL: "http://localhost:3001/",
     withCredentials: true
-})
+}) }
 
 
 API.interceptors.request.use(function (config)  {
