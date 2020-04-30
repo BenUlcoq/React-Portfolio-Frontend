@@ -27,7 +27,9 @@ export default function About() {
         <Box maxWidth={'500px'} flexGrow={2} flexBasis={'70%'} style={{margin: '5% 0'}} alignSelf={'flex-end'}>
           <Box className={'about-me'} style={{padding: '0 5%', display: 'flex', alignItems: 'center'}}>
             <h1 style={{fontSize: '3.5em', margin: '0'}}>About Me</h1>
-            <p style={{textAlign: 'justify', fontWeight: '300'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae elementum lorem, ut mollis dolor. Proin euismod erat nec nibh tristique posuere. Maecenas ultrices tempor ante placerat sagittis. Cras id purus sapien. Integer tincidunt pellentesque luctus. Aliquam erat volutpat. Quisque vestibulum vitae sapien non egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <p style={{textAlign: 'justify', fontWeight: '300'}}>Hi there! I’m Ben Ulcoq, an aspiring full-stack developer  from Brisbane. I’m a recent graduate of Coder Academy’s Fast Track Bootcamp Program. I completed a Bachelor of Digital Media at CQ University and after working as a Graphic Designer for two years I’m looking to make a change into a development role.
+            <br></br>
+            I’m currently seeking full-time employment as a developer, so have a look around and feel free to reach out if you’ve got any exciting opportunities or questions for me!</p>
             <Box display="flex" flexDirection="row" alignItems={'center'} width={'35%'} justifyContent='space-between'>
               <a rel="noopener noreferrer" target='_blank' href="https://www.linkedin.com/in/ben-ulcoq/">
                   <LinkedIn fontSize="large" style={{color: '#FF9302'}}></LinkedIn>
