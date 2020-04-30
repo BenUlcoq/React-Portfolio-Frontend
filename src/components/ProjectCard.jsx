@@ -32,12 +32,10 @@ export default function ProjectCard(props) {
 
   const mouseEnter = (e) => {
     props.setHovered(project._id)
-    console.log(project._id)
   }
 
   const mouseLeave = (e) => {
     props.setHovered(null)
-    console.log(null)
   }
 
   const isHovered = () => {
