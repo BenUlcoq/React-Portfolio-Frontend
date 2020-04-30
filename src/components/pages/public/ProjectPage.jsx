@@ -15,7 +15,7 @@ export default function ProjectPage() {
       `/projects/${projectId}`
     )
     .then((res) => {
-      setTimeout(function(){ setProject(res.data) }, 3000)
+      setProject(res.data)
       // setLoading(false)
     })
     .catch((err) => {

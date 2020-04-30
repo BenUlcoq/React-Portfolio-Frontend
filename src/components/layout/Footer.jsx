@@ -19,7 +19,7 @@ export default function Footer() {
       <div style={footerStyle}>
         <Box height={'100%'} width={'100%'} display="flex" flexWrap={'wrap'} flexDirection="row" justifyContent={'center'} alignItems={'space-around'}>
           <Box display="flex" flexDirection="row" justifyContent={'center'} width={'100%'}>
-            <Link style={{margin: '10px'}} to="/">
+            <Link style={{margin: '10px'}} to="/#">
               <Logo color={'white'}></Logo>
             </Link>
           </Box>

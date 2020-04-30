@@ -18,7 +18,7 @@ export default function ProjectsPage() {
     )
     .then((res) => {
       // TODO - REMOVE TIMEOUT
-      setTimeout(function(){ setProjects(res.data.projects)}, 2000)
+      setProjects(res.data.projects)
       
       // setLoading(false)
     })
