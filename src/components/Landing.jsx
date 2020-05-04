@@ -36,7 +36,7 @@ export default function Landing() {
             <Container style={{height: '100%'}}>
               <div style={{height: '100%', display: 'flex', justifyContent: 'center', alignContent: 'center', alignItems: 'center', flexFlow: 'row wrap'}}>
                 <h1 style={{width: '100%', fontSize: '3em', textAlign: 'center', color: 'white', fontWeight: 300, margin: 0}}>Hi.</h1>
-                <h1 style={{width: '100%', fontSize: '5em', textAlign: 'center', color: 'white', margin: 0}}> Im Ben.</h1>
+                <h1 style={{width: '100%', fontSize: '5em', textAlign: 'center', color: 'white', margin: 0}}> I'm Ben.</h1>
                 <h2 style={{width: '100%', fontSize: '2em', textAlign: 'center', color: 'white', fontWeight: 300}}>I'm a Developer.</h2>
                 <a href='#projects'><IconButton disableRipple size='large' style={{color: '#FF9302', width: '50px', padding: '5px'}}><ExpandMoreIcon fontSize='large' /></IconButton></a>
               </div>
